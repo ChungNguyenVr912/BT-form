@@ -1,0 +1,37 @@
+table
+{
+    margin: auto;
+    border-collapse: collapse;
+    
+    width: 100%;
+    background-color:rgb(255, 255, 255);
+    
+}
+body
+{
+    padding: 30px;
+}
+.form1
+{
+    background-color:rgb(195, 252, 252);
+    width: 50%;
+    margin: 0 auto;
+    
+}
+form
+{
+    width: 99%;
+}
+h1
+{
+    color: white;
+}
+tr
+{
+    color:orange;
+}
+
+label
+{
+    color:blue;
+}
