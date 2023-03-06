@@ -34,7 +34,7 @@
         
         <fieldset class="gender">
             <legend><label class="spe-label" for="f3">Gender Identity</label></legend> 
-            <div class="genselect">
+            <div class="genselect" >
                 <span>
                     <input type="radio" id="f3-1" name="f3" value="male">
                     <label for="f3-1">Male</label>
@@ -50,7 +50,8 @@
                 <span>
                     <input type="radio" id="f3-4" name="f3" value="other">
                     <label for="f3-4">Other</label><br>
-                    <input type="text" >
+                    <input type="text" id="field01" onclick="document.getElementById('f3-4').checked = 'checked'; document.getElementById('f3-4-1').style.display='block';" onblur="document.getElementById('f3-4-1').style.display='none';" >
+                    <label id="f3-4-1"  style="display: none;">Maximum of 250 characters.</label>
                 </span>
             </div>   
         </fieldset>
@@ -89,15 +90,19 @@
             <!-- <div class="inpmoney"> -->
                 <label for="dollar">$</label>
                 <!-- <p class="symbol$">$</p> -->
+                
                 <span class="dollar">
                     <input type="text" id="dollar" name="dollar">
-                    <label for="dollar">Dollars</label>
+                    
                 </span>
                 <label for="cent">.</label>
                 <span class="centt">
-                    <input type="text" id="cent" name="cent">
-                    <label for="cent">Cents</label>
-                </span>
+                    <input type="text" id="cent" name="cent" style="width: 50px;">
+                    
+                </span><br>
+                
+                <label for="dollar" style="margin-right: 95px; margin-left: 60px;">Dollars</label>
+                <label for="cent">Cents</label>
             <!-- </div> -->
 
         </fieldset>
@@ -194,6 +199,7 @@
                 </td>
             </tr>
         </table>
+        <input type="submit" value="Submit" style="margin-top: 10px;">
     </form>
 </body>
 </html>
