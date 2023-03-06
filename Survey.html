@@ -35,7 +35,7 @@
         
         <fieldset class="gender">
             <legend><label class="spe-label" for="f3">Gender Identity</label></legend> 
-            <div class="genselect" >
+            <div class="genselect" id="genselect">
                 <span>
                     <input type="radio" id="f3-1" name="f3" value="male">
                     <label for="f3-1">Male</label>
@@ -51,11 +51,14 @@
                 <span>
                     <input type="radio" id="f3-4" name="f3" value="other">
                     <label for="f3-4">Other</label><br>
-                    <input type="text" id="field01">
-                     <!-- onclick="document.getElementById('f3-4').checked = 'checked'; -->
-                       <!-- document.getElementById('f3-4-1').style.display='block';" -->
-                       <!-- onblur="document.getElementById('f3-4-1').style.display='none';" -->
-                    <label id="f3-4-1"  style="display: none;">Maximum of 250 characters.</label>
+                    <input type="text" id="field01" maxlength="250">
+                    <label id="f3-4-1"  style="display: none;">
+                        Maximum of <em><b>250</b></em> characters.
+                        &nbsp;
+                        <em>Current used 
+                        <var id="usedchar" style="font-weight: bold;">0</var>
+                        characters.</em>
+                    </label>
                 </span>
             </div>   
         </fieldset>
