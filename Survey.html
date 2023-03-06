@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="survey-style.css">
 </head>
 <body>
+    
     <form action="http://demo.codegym.vn/6/registration_form/register.php" method="post">
         <header>
             <h2>Market Research Survey</h2>
@@ -50,7 +51,10 @@
                 <span>
                     <input type="radio" id="f3-4" name="f3" value="other">
                     <label for="f3-4">Other</label><br>
-                    <input type="text" id="field01" onclick="document.getElementById('f3-4').checked = 'checked'; document.getElementById('f3-4-1').style.display='block';" onblur="document.getElementById('f3-4-1').style.display='none';" >
+                    <input type="text" id="field01">
+                     <!-- onclick="document.getElementById('f3-4').checked = 'checked'; -->
+                       <!-- document.getElementById('f3-4-1').style.display='block';" -->
+                       <!-- onblur="document.getElementById('f3-4-1').style.display='none';" -->
                     <label id="f3-4-1"  style="display: none;">Maximum of 250 characters.</label>
                 </span>
             </div>   
@@ -201,5 +205,7 @@
         </table>
         <input type="submit" value="Submit" style="margin-top: 10px;">
     </form>
+    <script src="survey.js"></script>
 </body>
+
 </html>
